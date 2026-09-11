@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Image from "next/image"
 import Link from "next/link"
 import { ArrowUpRight, Check } from "lucide-react"
 
@@ -7,6 +8,7 @@ import {
   about,
   expertisePages,
   hero,
+  profileImage,
   upworkUrl,
 } from "@/content/home"
 import { cn } from "@/lib/utils"
@@ -56,6 +58,16 @@ export default function HomePage() {
               <span className="mr-1 size-1.5 rounded-full bg-accent-orange" />
               {hero.eyebrow}
             </Badge>
+            <div className="mb-6 overflow-hidden rounded-full border border-ink/15 bg-white p-0.5">
+              <Image
+                src={profileImage}
+                alt="Shubham Kashyap"
+                width={112}
+                height={112}
+                className="size-[90px] rounded-full object-cover object-top sm:size-[112px]"
+                priority
+              />
+            </div>
             <h1 className="text-[clamp(2.8rem,7vw,5rem)] font-medium leading-[0.92] tracking-[-0.06em]">
               {hero.title}
             </h1>

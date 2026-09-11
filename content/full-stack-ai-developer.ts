@@ -27,7 +27,7 @@ export const hero = {
   titleAccent: "Multi-Tenant SaaS",
   description:
     "AI SaaS, multi-tenant platforms, and production software: architecture, development, integrations, and deployment.",
-  note: "I personally lead the technical work.",
+  note: "Direct collaboration from scope conversation through production delivery.",
 }
 
 export const credibility = [

@@ -1,13 +1,15 @@
 export const upworkUrl =
   "https://www.upwork.com/freelancers/~016892b2e096ca585d"
 
+export const profileImage = "/profile.jpg"
+
 export const hero = {
   eyebrow: "Upwork portfolio hub",
   title: "Shubham Kashyap",
   subtitle: "Full Stack AI Developer",
   description:
     "Targeted proof pages for Upwork prospects. Each page is built around a specific type of project, so clients see relevant work instead of a generic portfolio.",
-  note: "I personally lead the technical work.",
+  note: "Top Rated Plus · 37+ production contracts · 100% job success",
 }
 
 export const about = {
