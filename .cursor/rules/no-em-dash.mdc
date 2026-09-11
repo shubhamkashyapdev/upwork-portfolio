@@ -1,0 +1,41 @@
+---
+description: No em dashes in portfolio page copy
+globs: content/**/*.{ts,tsx},app/**/*.tsx
+alwaysApply: false
+---
+
+# No em dashes in page text
+
+Do not use em dashes (`—`, Unicode U+2014) in user-facing portfolio copy.
+
+This applies to content in `content/`, page components in `app/`, metadata titles/descriptions, headings, body copy, CTAs, and labels.
+
+## Use instead
+
+| Instead of | Use |
+|---|---|
+| `clause—clause` | Comma: `clause, clause` |
+| `intro—detail` | Colon: `intro: detail` |
+| `Label — value` | Middle dot: `Label · value` |
+| Separate sentences | Period: `sentence. Sentence` |
+| Parenthetical aside | Commas: `text, aside, text` |
+
+## Examples
+
+```
+// Bad
+"Built for production—not prototypes."
+"Production MVP — direct or POC-first"
+"You came here from my proposal—this page was the proof."
+
+// Good
+"Built for production, not prototypes."
+"Production MVP · direct or POC-first"
+"You came here from my proposal. This page was the proof."
+```
+
+## Notes
+
+- Middle dots (`·`) are fine for labels, tags, and separators.
+- Hyphens (`-`) in compound words and en dashes in numeric ranges are fine.
+- Upwork client quotes must stay verbatim; do not edit quoted text to remove em dashes.
