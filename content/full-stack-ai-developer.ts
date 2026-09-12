@@ -94,8 +94,8 @@ export const projects = [
     displayUrl: "usecortana.ai",
     description: "A multi-channel AI sales agent with voice, text, and CRM.",
     context:
-      "Fixed-price SaaS delivery followed by ongoing product work across a production agent platform.",
-    tags: ["Voice AI", "AI agents", "LiveKit", "Agentic CRM"],
+      "Full-stack agentic CRM SaaS with agency accounts, native agent tooling, and deep CRM sync.",
+    tags: ["Next.js", "Agentic CRM", "Multi-tenant SaaS", "tRPC"],
     image: "/projects/usecortana.png",
   },
   {
@@ -115,16 +115,17 @@ export const caseStudies = [
   {
     number: "01",
     name: "UseCortana",
-    eyebrow: "Multi-channel AI sales agent",
+    eyebrow: "Full-stack agentic sales CRM",
     description:
-      "The client needed a production platform, not a prototype, that could coordinate voice, text, and CRM activity in one coherent product.",
+      "A production SaaS for agencies selling AI-assisted outreach: sub-account structure, CRM depth, and agent workflows in one product, not a thin integration layer.",
     built:
-      "I led the architecture, full-stack product build, voice and real-time integrations, agent orchestration, and production delivery.",
+      "I led the Next.js and tRPC architecture and full-stack delivery: multi-tenant agency accounts, the in-app agent builder, conversation and lead systems, calendar, and GoHighLevel sync.",
     complexity: [
-      "VAPI, LiveKit & Hume AI voice pipeline with SIP trunking",
-      "Two-way GoHighLevel CRM synchronization",
-      "Multi-channel communication - Native Agent Builder",
-      "Twilio phone numbers + A2P management",
+      "Next.js and tRPC foundation with type-safe APIs across the product",
+      "Agency model with unlimited sub-accounts, similar in shape to GoHighLevel",
+      "Two-way GoHighLevel sync via webhooks for contacts, tags, and custom fields",
+      "Native agent builder with import and export, plus full conversation history",
+      "Leads, tags, custom fields, and an integrated calendar for scheduling",
     ],
     result: "5.0 rating · Product development · Ongoing product work",
     image: "/projects/usecortana.png",
@@ -178,9 +179,9 @@ export const reviews = [
     featured: true,
   },
   {
-    title: "AI Sales Bot / SaaS Web App",
+    title: "UseCortana · Full-Stack Agentic Sales CRM & SaaS Platform",
     rating: "5.0",
-    meta: "Fixed-price AI platform",
+    meta: "SaaS Development Expert · Committed to quality · Professional",
     quote: "Respectful, knowledgeable, honest and smart.",
   },
   {

@@ -6,6 +6,7 @@ import { ArrowUpRight, Check } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import {
   about,
+  expertiseIntro,
   expertisePages,
   hero,
   profileImage,
@@ -111,11 +112,10 @@ export default function HomePage() {
             </div>
             <div>
               <h2 className="max-w-2xl text-balance text-3xl font-medium tracking-[-0.04em] sm:text-4xl">
-                Focused portfolio pages by project type.
+                {expertiseIntro.title}
               </h2>
               <p className="mt-5 max-w-2xl text-pretty text-base leading-7 text-muted-ink">
-                Upwork proposals link directly to the page that matches the
-                work. One page live today. The rest are being assembled.
+                {expertiseIntro.description}
               </p>
             </div>
           </div>

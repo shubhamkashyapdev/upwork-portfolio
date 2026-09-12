@@ -4,17 +4,23 @@ export const upworkUrl =
 export const profileImage = "/profile.jpg"
 
 export const hero = {
-  eyebrow: "Upwork portfolio hub",
+  eyebrow: "Full Stack AI Developer",
   title: "Shubham Kashyap",
-  subtitle: "Full Stack AI Developer",
+  subtitle: "Production SaaS & multi-tenant platforms",
   description:
-    "Targeted proof pages for Upwork prospects. Each page is built around a specific type of project, so clients see relevant work instead of a generic portfolio.",
+    "I build and ship AI products and custom software end to end: architecture, development, integrations, and production delivery. Upwork Top Rated Plus.",
   note: "Top Rated Plus · 37+ production contracts · 100% job success",
 }
 
 export const about = {
   title: "Who I am",
-  body: "Hands-on full-stack developer focused on AI products, multi-tenant SaaS, and production software. These pages exist to support Upwork proposals: one focused proof document per buying intent, not a broad agency site.",
+  body: "Hands-on full-stack developer working with founders and product teams on SaaS, multi-tenant platforms, and AI-powered applications. I stay close to the build from early scoping through production and iteration.",
+}
+
+export const expertiseIntro = {
+  title: "Areas I work in.",
+  description:
+    "Each card links to a focused proof page with products and client feedback matched to that type of hire.",
 }
 
 export type ExpertiseStatus = "live" | "building"
