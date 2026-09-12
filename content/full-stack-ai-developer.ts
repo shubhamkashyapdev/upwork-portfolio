@@ -32,6 +32,22 @@ export const proposalCta = {
     "Upwork proposal screen with the Message button highlighted for replying to the proposal",
 }
 
+export const founderTestimonial = {
+  eyebrow: "Founder perspective",
+  title: "What it's like to work with me.",
+  name: "Guliver Kalamba",
+  role: "Founder, MeisterFlow",
+  location: "Singapore",
+  context:
+    "Working together on MeisterFlow: product development, technical decisions, and building the platform.",
+  youtubeId: "dPtYTkw-87A",
+  productLabel: "MeisterFlow",
+  productMeta:
+    "Multi-tenant SaaS · Booking · Invoicing · Stripe · Next.js · Supabase",
+  credibility:
+    "5.0 Upwork rating · Live production platform · app.meisterflow.ch",
+}
+
 export const hero = {
   badge: "Upwork · Top Rated Plus",
   title: "Full Stack AI Developer",
@@ -43,9 +59,9 @@ export const hero = {
 
 export const credibility = [
   { value: "Top Rated Plus", label: "Upwork talent" },
-  { value: "$80K+", label: "Verified earnings" },
-  { value: "4,200+", label: "Upwork hours" },
   { value: "100%", label: "Job success" },
+  { value: "37+", label: "Production contracts" },
+  { value: "Repeat", label: "Long-term clients" },
 ]
 
 export const projects = [
@@ -128,7 +144,7 @@ export const caseStudies = [
       "Multi-channel communication - Native Agent Builder",
       "Twilio phone numbers + A2P management",
     ],
-    result: "5.0 RATING · $28,415 ACROSS 2 CONTRACTS · PRODUCT DEVELOPMENT",
+    result: "5.0 rating · Product development · Ongoing product work",
     image: "/projects/usecortana.png",
     url: "https://usecortana.ai",
   },
@@ -164,7 +180,7 @@ export const caseStudies = [
       "Ongoing production delivery",
       "Long-term codebase stewardship",
     ],
-    result: "5.0 rating · $24,543 across contracts · 2,433 hours",
+    result: "5.0 rating · Long-term engagement · Ongoing production delivery",
     image: "/projects/logoarena.jpg",
     url: "https://logoarena.com",
   },
@@ -182,33 +198,29 @@ export const reviews = [
   {
     title: "AI Sales Bot / SaaS Web App",
     rating: "5.0",
-    value: "$24,500",
     meta: "Fixed-price AI platform",
     quote: "Respectful, knowledgeable, honest and smart.",
   },
   {
     title: "LogoArena · Full Stack AI Developer",
     rating: "5.0",
-    value: "$8,144",
     meta:
-      "679 hours · Long-term · Reliable · Committed to quality · Clear communicator",
+      "Long-term · Reliable · Committed to quality · Clear communicator",
     quote:
       "Really enjoyed working with Shubham. He's creative, dependable, and easy to collaborate with. The work was completed on time, communication was great, and the work was always high-quality.",
   },
   {
     title: "LogoArena · Frontend / Full Stack Developer",
     rating: "5.0",
-    value: "$16,399",
     meta:
-      "1,754 hours · Long-term · Collaborative · Detail oriented · Committed to quality",
+      "Long-term · Collaborative · Detail oriented · Committed to quality",
     quote:
       "Wow. It's been an absolutely incredible experience working with Shubham. Beyond the fact that he is a top developer and true expert in his field, he is also a great person and extremely easy to work with. Our project required both creative and logical thinking, and has multiple levels of complexity. Throughout all stages of our project, Shubham was able to help us plan, research, and execute our vision at the highest level, with patience, and attention to even the smallest of details. In fact, we haven't stopped working with Shubham, we're continuing straight on to another project with him. Thanks a lot Shubham! Looking forward to what's next!",
   },
   {
     title: "Hiding Elephant · Full Stack Development",
     rating: "5.0",
-    value: "$3,345",
-    meta: "335 hours · Repeat client · Endorsed · Collaborative",
+    meta: "Repeat client · Endorsed · Collaborative",
     quote:
       "This was our second project working with Shubham, and just like the first, we had a fantastic experience working with him throughout the entire project! Both Shubham's skills and personality fit in perfectly with our company's culture and vision, and we're excited to continue working together on our new projects. Thanks Shubham!",
   },

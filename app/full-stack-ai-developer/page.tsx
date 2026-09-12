@@ -15,6 +15,7 @@ import {
   caseStudies,
   credibility,
   deliveryProcess,
+  founderTestimonial,
   hero,
   principles,
   projects,
@@ -57,6 +58,35 @@ function SectionIntro({
           </p>
         ) : null}
       </div>
+    </div>
+  )
+}
+
+function VideoEmbed({
+  youtubeId,
+  iframeTitle,
+  caption,
+}: {
+  youtubeId: string
+  iframeTitle: string
+  caption?: string
+}) {
+  return (
+    <div className="group relative aspect-video overflow-hidden border border-ink/15 bg-[#e9e6df] p-2 sm:p-3">
+      <iframe
+        className="h-full w-full"
+        src={`https://www.youtube-nocookie.com/embed/${youtubeId}?rel=0&modestbranding=1`}
+        title={iframeTitle}
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+      />
+      {caption ? (
+        <div className="pointer-events-none absolute bottom-6 left-6 hidden items-center gap-3 bg-paper px-4 py-3 text-xs font-medium shadow-sm sm:flex">
+          <Play className="size-3 fill-current" />
+          {caption}
+        </div>
+      ) : null}
     </div>
   )
 }
@@ -186,34 +216,47 @@ export default function FullStackAiDeveloperPage() {
         </section>
 
         <section className="pb-28">
-          <div className="grid gap-6 border-t border-ink/15 pt-6 md:grid-cols-[1fr_2fr]">
-            <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted-ink">
-              00 / A quick introduction
+          <SectionIntro
+            index="01"
+            eyebrow={founderTestimonial.eyebrow}
+            title={founderTestimonial.title}
+            description={founderTestimonial.context}
+          />
+
+          <div className="mt-12 border border-ink/15 bg-[#f5f2eb]">
+            <div className="border-b border-ink/15 px-6 py-8 sm:px-10 sm:py-9">
+              <p className="text-xl font-medium tracking-[-0.03em] sm:text-2xl">
+                {founderTestimonial.name}
+              </p>
+              <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.14em] text-muted-ink">
+                {founderTestimonial.role} · {founderTestimonial.location}
+              </p>
             </div>
-            <p className="max-w-2xl text-balance text-2xl font-medium leading-tight tracking-[-0.035em] sm:text-3xl">
-              How I think about AI product delivery, and what you can expect
-              when we collaborate on the technical side.
-            </p>
-          </div>
-          <div className="group relative mt-10 aspect-video overflow-hidden border border-ink/15 bg-[#e9e6df] p-2 sm:p-3">
-            <iframe
-              className="h-full w-full"
-              src="https://www.youtube-nocookie.com/embed/ksEpYyKt8wY?rel=0&modestbranding=1"
-              title="How I approach full-stack AI product development"
-              loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            />
-            <div className="pointer-events-none absolute bottom-6 left-6 hidden items-center gap-3 bg-paper px-4 py-3 text-xs font-medium shadow-sm sm:flex">
-              <Play className="size-3 fill-current" />
-              A direct note for potential clients
+            <div className="p-3 sm:p-5">
+              <VideoEmbed
+                youtubeId={founderTestimonial.youtubeId}
+                iframeTitle={`${founderTestimonial.name} on working with Shubham Kashyap`}
+              />
+            </div>
+            <div className="grid gap-4 border-t border-ink/15 px-6 py-6 sm:grid-cols-[1fr_auto] sm:items-end sm:gap-8 sm:px-10 sm:py-7">
+              <div>
+                <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-accent-orange">
+                  {founderTestimonial.productLabel}
+                </p>
+                <p className="mt-2 text-sm font-medium leading-6">
+                  {founderTestimonial.productMeta}
+                </p>
+              </div>
+              <p className="max-w-sm text-sm leading-6 text-muted-ink sm:text-right">
+                {founderTestimonial.credibility}
+              </p>
             </div>
           </div>
         </section>
 
         <section className="pb-28">
           <SectionIntro
-            index="01"
+            index="02"
             eyebrow="Production work"
             title="Clients who trusted me with real products."
             description="Live businesses, repeat engagements, and software used in production, not tutorial projects or concept screens."
@@ -282,7 +325,7 @@ export default function FullStackAiDeveloperPage() {
 
         <section className="pb-28">
           <SectionIntro
-            index="02"
+            index="03"
             eyebrow="Selected case studies"
             title="A closer look at three production products I’ve built."
             description="The products, systems, and technical work behind each engagement."
@@ -350,7 +393,7 @@ export default function FullStackAiDeveloperPage() {
 
         <section className="pb-28">
           <SectionIntro
-            index="03"
+            index="04"
             eyebrow="Upwork history"
             title="The strongest claims are the ones clients make."
             description="Verified contract outcomes from the platform where these engagements began."
@@ -442,7 +485,7 @@ export default function FullStackAiDeveloperPage() {
 
         <section className="pb-28">
           <SectionIntro
-            index="04"
+            index="05"
             eyebrow="How I work"
             title="I lead the delivery, not just the code."
             description="You get a hands-on technical partner who turns ambiguity into decisions and keeps the build moving through production."
@@ -470,7 +513,7 @@ export default function FullStackAiDeveloperPage() {
 
         <section className="pb-28">
           <SectionIntro
-            index="05"
+            index="06"
             eyebrow="Delivery approach"
             title="Sprint planning and AI-assisted development."
             description="Structured for faster implementation, clearer scope, and nothing left to assumption."
@@ -510,7 +553,7 @@ export default function FullStackAiDeveloperPage() {
 
         <section className="pb-28">
           <SectionIntro
-            index="06"
+            index="07"
             eyebrow="Capabilities"
             title="What I can help you build."
             description="Capabilities organized around outcomes, not a wall of technology logos."
@@ -562,7 +605,7 @@ export default function FullStackAiDeveloperPage() {
 
         <section className="pb-10">
           <SectionIntro
-            index="07"
+            index="08"
             eyebrow={proposalCta.eyebrow}
             title={proposalCta.title}
           />
