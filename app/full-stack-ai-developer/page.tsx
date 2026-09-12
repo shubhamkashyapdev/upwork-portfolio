@@ -470,10 +470,6 @@ export default function FullStackAiDeveloperPage() {
               </article>
             ))}
           </div>
-          <p className="mt-12 max-w-2xl border border-ink/15 bg-[#f7f4ed] p-6 text-sm leading-7 text-muted-ink sm:p-8 sm:text-base">
-            If this matches what you need, continue on the Upwork proposal where
-            you opened this link. More on how to reply at the end of the page.
-          </p>
         </section>
 
         <section className="pb-28">
