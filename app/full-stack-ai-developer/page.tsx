@@ -451,23 +451,14 @@ export default function FullStackAiDeveloperPage() {
                   <div
                     className={cn(
                       "mt-auto border-t border-ink/15 pt-5",
-                      review.featured && "border-paper/20",
-                      review.value
-                        ? "flex items-end justify-between gap-6"
-                        : "space-y-0"
+                      review.featured && "border-paper/20"
                     )}
                   >
-                    {review.value ? (
-                      <span className="text-2xl font-semibold tracking-[-0.04em]">
-                        {review.value}
-                      </span>
-                    ) : null}
                     <p
                       className={cn(
                         "text-xs font-medium leading-6 text-muted-ink",
                         review.featured &&
-                          "text-sm leading-7 text-paper/80 sm:text-base",
-                        review.value && "text-right"
+                          "text-sm leading-7 text-paper/80 sm:text-base"
                       )}
                     >
                       {review.meta}
