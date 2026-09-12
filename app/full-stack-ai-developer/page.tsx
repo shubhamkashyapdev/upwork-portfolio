@@ -5,13 +5,11 @@ import {
   ArrowUpRight,
   Check,
   ExternalLink,
-  MessageSquareText,
   Play,
   Star,
 } from "lucide-react"
 
 import { Badge } from "@/components/ui/badge"
-import { buttonVariants } from "@/components/ui/button"
 import {
   capabilities,
   caseStudies,
@@ -20,9 +18,9 @@ import {
   hero,
   principles,
   projects,
+  proposalCta,
   reviews,
   productionStack,
-  upworkUrl,
 } from "@/content/full-stack-ai-developer"
 import { cn } from "@/lib/utils"
 
@@ -286,8 +284,8 @@ export default function FullStackAiDeveloperPage() {
           <SectionIntro
             index="02"
             eyebrow="Selected case studies"
-            title="The work behind the screenshots."
-            description="A closer look at the product decisions, systems, and technical work behind three engagements."
+            title="A closer look at three production products I’ve built."
+            description="The products, systems, and technical work behind each engagement."
           />
 
           <div className="mt-16 space-y-24">
@@ -436,26 +434,10 @@ export default function FullStackAiDeveloperPage() {
               </article>
             ))}
           </div>
-          <div className="mt-12 border border-ink/15 bg-[#f7f4ed] p-8 sm:p-10">
-            <p className="max-w-2xl text-lg font-medium leading-7 tracking-[-0.02em]">
-              If this matches what you&apos;re looking for, the next step is
-              simple: send me your project details on Upwork and we can talk
-              through scope and approach.
-            </p>
-            <a
-              href={upworkUrl}
-              target="_blank"
-              rel="noreferrer"
-              className={cn(
-                buttonVariants({ variant: "outline", size: "lg" }),
-                "mt-6 h-12 rounded-none border-ink bg-paper px-6 hover:bg-paper/80"
-              )}
-            >
-              <MessageSquareText className="size-4" />
-              Send me a message on Upwork
-              <ArrowUpRight className="size-4" />
-            </a>
-          </div>
+          <p className="mt-12 max-w-2xl border border-ink/15 bg-[#f7f4ed] p-6 text-sm leading-7 text-muted-ink sm:p-8 sm:text-base">
+            If this matches what you need, continue on the Upwork proposal where
+            you opened this link. More on how to reply at the end of the page.
+          </p>
         </section>
 
         <section className="pb-28">
@@ -579,47 +561,37 @@ export default function FullStackAiDeveloperPage() {
         </section>
 
         <section className="pb-10">
-          <div className="relative overflow-hidden bg-accent-orange px-6 py-16 text-[#1b140e] sm:px-10 sm:py-20 lg:px-16 lg:py-24">
-            <div
-              aria-hidden="true"
-              className="absolute -right-24 -top-32 size-96 rounded-full border border-[#1b140e]/15"
-            />
-            <div
-              aria-hidden="true"
-              className="absolute -right-8 -top-16 size-64 rounded-full border border-[#1b140e]/15"
-            />
-            <div className="relative grid gap-12 lg:grid-cols-[1.45fr_1fr] lg:items-end">
-              <div>
-                <p className="font-mono text-[10px] uppercase tracking-[0.18em]">
-                  Next step · Back on Upwork
-                </p>
-                <h2 className="mt-8 max-w-3xl text-balance text-5xl font-medium leading-[0.92] tracking-[-0.06em] sm:text-6xl lg:text-7xl">
-                  Ready to talk through your project?
-                </h2>
-              </div>
-              <div>
-                <p className="max-w-md text-base leading-7 text-[#1b140e]/75">
-                  You came here from my proposal. This page was the proof. If
-                  what you saw builds confidence, send me your project details
-                  on Upwork and we can discuss scope, approach, and next steps.
-                </p>
-                <a
-                  href={upworkUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className={cn(
-                    buttonVariants({ size: "lg" }),
-                    "mt-8 h-13 rounded-none bg-ink px-6 text-paper hover:bg-ink/85"
-                  )}
-                >
-                  <MessageSquareText className="size-4" />
-                  Send me a message on Upwork
-                  <ArrowUpRight className="size-4" />
-                </a>
-              </div>
+          <SectionIntro
+            index="07"
+            eyebrow={proposalCta.eyebrow}
+            title={proposalCta.title}
+          />
+
+          <div className="mt-10 grid gap-10 lg:grid-cols-[1fr_1.35fr] lg:gap-14 lg:items-start">
+            <div>
+              <p className="max-w-md text-base leading-7 text-muted-ink sm:text-lg sm:leading-8">
+                {proposalCta.body}
+              </p>
             </div>
+
+            <figure className="border border-ink/15 bg-[#f3f1eb] p-2 sm:p-3">
+              <div className="overflow-hidden border border-ink/10 bg-white">
+                <Image
+                  src={proposalCta.image}
+                  alt={proposalCta.imageAlt}
+                  width={800}
+                  height={450}
+                  className="h-auto w-full"
+                  sizes="(max-width: 1024px) 100vw, 55vw"
+                />
+              </div>
+              <figcaption className="mt-3 px-1 text-center text-sm text-muted-ink">
+                {proposalCta.caption}
+              </figcaption>
+            </figure>
           </div>
-          <div className="flex flex-col justify-between gap-3 border-t border-ink/15 py-5 font-mono text-[9px] uppercase tracking-[0.14em] text-muted-ink sm:flex-row">
+
+          <div className="mt-12 flex flex-col justify-between gap-3 border-t border-ink/15 py-5 font-mono text-[9px] uppercase tracking-[0.14em] text-muted-ink sm:flex-row">
             <span>Shubham Kashyap · Full-Stack AI Developer</span>
             <span>Top Rated Plus · 100% Job Success</span>
           </div>

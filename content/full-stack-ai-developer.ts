@@ -21,6 +21,17 @@ import {
 export const upworkUrl =
   "https://www.upwork.com/freelancers/~016892b2e096ca585d"
 
+export const proposalCta = {
+  eyebrow: "Next step",
+  title: "Think we could be a good fit?",
+  body:
+    "Tell me what you're building. We can talk through the project, discuss the architecture and important technical decisions, and work out the right approach before development begins.",
+  caption: "Send me a message and let's talk about it.",
+  image: "/upwork-proposal-message.jpg",
+  imageAlt:
+    "Upwork proposal screen with the Message button highlighted for replying to the proposal",
+}
+
 export const hero = {
   badge: "Upwork · Top Rated Plus",
   title: "Full Stack AI Developer",
@@ -112,12 +123,12 @@ export const caseStudies = [
     built:
       "I led the architecture, full-stack product build, voice and real-time integrations, agent orchestration, and production delivery.",
     complexity: [
-      "VAPI and LiveKit voice pipeline",
-      "Agentic CRM behavior",
-      "Multi-channel communication",
-      "Production SaaS surfaces",
+      "VAPI, LiveKit & Hume AI voice pipeline with SIP trunking",
+      "Two-way GoHighLevel CRM synchronization",
+      "Multi-channel communication - Native Agent Builder",
+      "Twilio phone numbers + A2P management",
     ],
-    result: "5.0 rating · $3,915 · 131 hours · ongoing product work",
+    result: "5.0 RATING · $28,415 ACROSS 2 CONTRACTS · PRODUCT DEVELOPMENT",
     image: "/projects/usecortana.png",
     url: "https://usecortana.ai",
   },
