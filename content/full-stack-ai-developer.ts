@@ -109,24 +109,6 @@ export const projects = [
     tags: ["Multi-tenant", "Supabase", "Stripe", "Automation"],
     image: "/projects/meisterflow.jpg",
   },
-  {
-    name: "Real Estate Underwriting SaaS",
-    location: "USA",
-    displayUrl: "Private beta",
-    description: "Vertical software shaped around real underwriting work.",
-    context:
-      "Custom intake, document handling, and CRM-connected operations for an industry-specific workflow.",
-    tags: ["Vertical SaaS", "Documents", "CRM", "Workflows"],
-  },
-  {
-    name: "Image Generation SaaS",
-    location: "Canada",
-    displayUrl: "Client-owned product",
-    description: "A production-ready AI image generation application.",
-    context:
-      "Fixed-price delivery from a tightly scoped MVP through complete SaaS product surfaces.",
-    tags: ["AI generation", "API integration", "Next.js", "SaaS"],
-  },
 ]
 
 export const caseStudies = [
