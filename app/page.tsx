@@ -11,13 +11,15 @@ import {
   profileImage,
   upworkUrl,
 } from "@/content/home"
+import { buildPageMetadata } from "@/lib/site"
 import { cn } from "@/lib/utils"
 
-export const metadata: Metadata = {
-  title: "Shubham Kashyap · Upwork Portfolio",
+export const metadata: Metadata = buildPageMetadata({
+  title: "Shubham Kashyap · Full Stack AI Developer",
   description:
-    "Targeted Upwork portfolio pages for full-stack AI development, automations, n8n, and GoHighLevel work.",
-}
+    "Full stack AI developer. I ship production SaaS, multi-tenant platforms, and custom software from architecture through deployment. Upwork Top Rated Plus.",
+  path: "/",
+})
 
 function BuildingStatus() {
   return (

@@ -23,13 +23,15 @@ import {
   reviews,
   productionStack,
 } from "@/content/full-stack-ai-developer"
+import { buildPageMetadata } from "@/lib/site"
 import { cn } from "@/lib/utils"
 
-export const metadata: Metadata = {
-  title: "Full-Stack AI Developer | Shubham Kashyap",
+export const metadata: Metadata = buildPageMetadata({
+  title: "Shubham Kashyap · Full Stack AI Developer",
   description:
-    "Production AI products, multi-tenant SaaS platforms, and custom software built end-to-end.",
-}
+    "Full stack AI developer focused on production SaaS and multi-tenant platforms. Live work includes MeisterFlow, LogoArena, and AgentKong.",
+  path: "/full-stack-ai-developer",
+})
 
 function SectionIntro({
   index,

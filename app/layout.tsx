@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import {
+  defaultDescription,
+  defaultTitle,
+  getSiteUrl,
+  ogImage,
+  siteName,
+} from "@/lib/site";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,12 +20,31 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: getSiteUrl(),
   title: {
-    default: "Shubham Kashyap · Upwork Portfolio",
+    default: defaultTitle,
     template: "%s",
   },
-  description:
-    "Production AI products, SaaS platforms, and custom software built end-to-end.",
+  description: defaultDescription,
+  applicationName: siteName,
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    siteName,
+    title: defaultTitle,
+    description: defaultDescription,
+    images: [ogImage],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: defaultTitle,
+    description: defaultDescription,
+    images: [ogImage.url],
+  },
+  icons: {
+    icon: [{ url: "/profile.jpg", type: "image/jpeg", sizes: "1024x1024" }],
+    apple: [{ url: "/profile.jpg", type: "image/jpeg", sizes: "1024x1024" }],
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
